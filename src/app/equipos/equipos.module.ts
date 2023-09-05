@@ -1,0 +1,27 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { EquiposRoutingModule } from './equipos-routing.module';
+import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
+import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { ListPageComponent } from './pages/list-page/list-page.component';
+import { PlayerPageComponent } from './pages/player-page/player-page.component';
+import { MaterialModule } from '../material/material.module';
+import { EquiposComponent } from './pages/equipos/equipos.component';
+
+
+@NgModule({
+  declarations: [
+    LayoutPageComponent,
+    SearchPageComponent,
+    ListPageComponent,
+    PlayerPageComponent,
+    EquiposComponent
+  ],
+  imports: [
+    CommonModule,
+    EquiposRoutingModule,
+    MaterialModule
+  ]
+})
+export class EquiposModule { }
