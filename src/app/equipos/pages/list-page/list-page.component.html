@@ -1,1 +1,9 @@
-<p>list-page works!</p>
+<h1 class=" flex justify-content-center">Listado de Equipos</h1>
+<mat-divider></mat-divider>
+
+<div class="grid bm-8 pt-2 justify-content-center">
+  <div *ngFor="let equipo of equipos"
+   class="col-m6 sm:col-4 md:col-3 xl:col-2">
+   <equipos-equipo-card [equipo]="equipo"></equipos-equipo-card>
+  </div>
+</div>

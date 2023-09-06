@@ -8,6 +8,8 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { PlayerPageComponent } from './pages/player-page/player-page.component';
 import { MaterialModule } from '../material/material.module';
 import { EquiposComponent } from './pages/equipos/equipos.component';
+import { CardComponent } from './components/card/card.component';
+import { EquipoImagenPipe } from './pipes/equipo-imagen.pipe';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { EquiposComponent } from './pages/equipos/equipos.component';
     SearchPageComponent,
     ListPageComponent,
     PlayerPageComponent,
-    EquiposComponent
+    EquiposComponent,
+    CardComponent,
+    EquipoImagenPipe
   ],
   imports: [
     CommonModule,
