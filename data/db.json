@@ -1,0 +1,25 @@
+{
+  "equipo":[
+    {
+      "id": "Exoticos_ST",
+      "nombre_equipo": "Exoticos ST"
+    },
+    {
+      "id": "Team_Rulay",
+      "nombre_equipo": "Team Rulay"
+    },
+    {
+      "id": "Titanes",
+      "nombre_equipo": "Titanes"
+    },
+    {
+      "id": "Hangover",
+      "nombre_equipo": "Hangover"
+    },
+    {
+      "id": "The_Legions",
+      "nombre_equipo": "The Legions"
+    }
+
+  ]
+}

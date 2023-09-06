@@ -1,0 +1,8 @@
+<mat-card (click)="onClick()">
+    <mat-card-header class="justify-content-center m-2" >
+        <mat-card-title>{{equipo.nombre_equipo}}</mat-card-title>
+    </mat-card-header>
+
+    <img mat-card-image [src]=" equipo | heroImage" [alt]="equipo.nombre_equipo">
+
+</mat-card>
