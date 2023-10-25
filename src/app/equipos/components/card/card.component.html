@@ -5,9 +5,10 @@
 
   <img mat-card-image [src]=" equipo | heroImage" [alt]="equipo.name">
 
-  <button mat-button mat-stroked-button color="accent">
+  <button mat-button mat-stroked-button color="accent" [routerLink]="['/teams/',equipo.id]">
     <mat-icon> more_horiz</mat-icon>
     ver Equipo
+
   </button>
 
 </mat-card>

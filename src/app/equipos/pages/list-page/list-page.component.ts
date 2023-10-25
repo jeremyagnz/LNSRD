@@ -21,7 +21,6 @@ export class ListPageComponent implements OnInit {
     this.equiposService.getTeams()
       .subscribe(data => {
         this.equipos = data;
-        console.log(this.equipos);
       });
 
 

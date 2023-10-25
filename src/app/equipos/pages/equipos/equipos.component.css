@@ -1,0 +1,30 @@
+/* Contenedor de la tabla */
+.table-container {
+  overflow-x: auto; /* Permitir desplazamiento horizontal en dispositivos estrechos */
+}
+
+/* Asegura que la tabla ocupe todo el ancho del contenedor */
+table {
+  width: 100%;
+  white-space: nowrap; /* Evita que los elementos se envuelvan */
+}
+
+/* Establece el ancho mínimo de las columnas según tus necesidades */
+th, td {
+  min-width: 100px; /* Ajusta el valor según tus necesidades */
+  padding: 8px;
+}
+
+/* Establece colores intercalados para las filas de la tabla */
+tr:nth-child(even) {
+  background-color: #303030; /* Color para las filas pares */
+}
+
+tr:nth-child(odd) {
+  background-color: #212124; /* Color para las filas impares */
+}
+
+a {
+  text-decoration: none;
+  color: #69f0ae;
+}

@@ -17,7 +17,6 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     if(!this.equipo) throw Error('Hero property is required')
-    console.log(this.equipo);
   }
 
   onClick(){
