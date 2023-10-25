@@ -6,15 +6,15 @@ import { Equipos } from '../interfaces/equipos.interfaces';
 })
 export class EquipoImagenPipe implements PipeTransform {
 
-  transform(equipo: Equipos): string {
+  transform(equipo: any): string {
 
-    if(!equipo.id && !equipo.alt_img){
+    if(!equipo.name && !equipo.alt_img){
       return 'assets/no-image.png';
     }
 
     if(equipo.alt_img) return equipo.alt_img;
 
-    return `assets/equipos/${equipo.id}.jpg`;
+    return `assets/equipos/${equipo.name}.jpg`;
   }
 
 }

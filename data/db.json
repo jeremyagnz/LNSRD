@@ -1,8 +1,34 @@
 {
-  "equipo":[
+  "equipo": [
     {
       "id": "Exoticos_ST",
-      "nombre_equipo": "Exoticos ST"
+      "nombre_equipo": "Exoticos ST",
+      "jugadores": [
+        {
+          "cedula": "402-3864513-5",
+          "nombre": "Jeremy",
+          "apellidos": "Arias González",
+          "team_id": "Exoticos_ST"
+        },
+        {
+          "cedula": "402-3861213-5",
+          "nombre": "Robert",
+          "apellidos": "Arias Perez",
+          "team_id": "The_Legions"
+        },
+        {
+          "cedula": "402-5164513-3",
+          "nombre": "Darlin",
+          "apellidos": "Almonte Diaz",
+          "team_id": "Hangover"
+        },
+        {
+          "cedula": "402-3123513-5",
+          "nombre": "Alex",
+          "apellidos": "Matos Frias",
+          "team_id": "Team_Rulay"
+        }
+      ]
     },
     {
       "id": "Team_Rulay",
@@ -10,7 +36,33 @@
     },
     {
       "id": "Titanes",
-      "nombre_equipo": "Titanes"
+      "nombre_equipo": "Titanes",
+      "jugadores": [
+        {
+          "cedula": "402-3864513-5",
+          "nombre": "Jeremy",
+          "apellidos": "Arias González",
+          "team_id": "Exoticos_ST"
+        },
+        {
+          "cedula": "402-3861213-5",
+          "nombre": "Robert",
+          "apellidos": "Arias Perez",
+          "team_id": "The_Legions"
+        },
+        {
+          "cedula": "402-5164513-3",
+          "nombre": "Darlin",
+          "apellidos": "Almoasasnte Diaz",
+          "team_id": "Hangover"
+        },
+        {
+          "cedula": "402-3123513-5",
+          "nombre": "Alex",
+          "apellidos": "Matos Frias",
+          "team_id": "Team_Rulay"
+        }
+      ]
     },
     {
       "id": "Hangover",
@@ -20,6 +72,5 @@
       "id": "The_Legions",
       "nombre_equipo": "The Legions"
     }
-
   ]
 }

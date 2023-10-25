@@ -10,6 +10,7 @@ import { MaterialModule } from '../material/material.module';
 import { EquiposComponent } from './pages/equipos/equipos.component';
 import { CardComponent } from './components/card/card.component';
 import { EquipoImagenPipe } from './pipes/equipo-imagen.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { EquipoImagenPipe } from './pipes/equipo-imagen.pipe';
   imports: [
     CommonModule,
     EquiposRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class EquiposModule { }
