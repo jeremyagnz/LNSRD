@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Equipos } from '../../interfaces/equipos.interfaces';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'equipos-equipo-card',
@@ -9,14 +10,17 @@ import { Equipos } from '../../interfaces/equipos.interfaces';
 export class CardComponent implements OnInit {
 
   @Input()
-  public equipo!: Equipos;
+  public equipo!: any;
+
+  constructor( private activatedRoute:ActivatedRoute){}
 
 
   ngOnInit(): void {
     if(!this.equipo) throw Error('Hero property is required')
+    console.log(this.equipo);
   }
 
   onClick(){
-    console.log('clicked');
+
   }
 }

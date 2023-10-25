@@ -1,7 +1,13 @@
-
-
-.color-nav{
+.color-nav {
   background-color: rgb(255, 255, 255);
   color: black;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}

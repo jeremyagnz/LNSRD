@@ -1,8 +1,13 @@
-<mat-card (click)="onClick()">
-    <mat-card-header class="justify-content-center m-2" >
-        <mat-card-title>{{equipo.nombre_equipo}}</mat-card-title>
-    </mat-card-header>
+<mat-card (click)="onClick()" class="size">
+  <mat-card-header class="justify-content-center m-2">
+    <mat-card-title>{{equipo.name | titlecase }}</mat-card-title>
+  </mat-card-header>
 
-    <img mat-card-image [src]=" equipo | heroImage" [alt]="equipo.nombre_equipo">
+  <img mat-card-image [src]=" equipo | heroImage" [alt]="equipo.name">
+
+  <button mat-button mat-stroked-button color="accent">
+    <mat-icon> more_horiz</mat-icon>
+    ver Equipo
+  </button>
 
 </mat-card>

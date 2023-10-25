@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Equipos } from '../../interfaces/equipos.interfaces';
 import { EquiposService } from '../../services/equipos.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-list-page',
@@ -10,12 +11,27 @@ import { EquiposService } from '../../services/equipos.service';
 export class ListPageComponent implements OnInit {
   public equipos:Equipos[] = [];
 
-  constructor(private equiposService:EquiposService){}
+  constructor(
+    private equiposService:EquiposService,
+    private activatedRoute:ActivatedRoute,
+    ){}
 
-  ngOnInit(): void {
+  ngOnInit() {
 
-    this.equiposService.getEquipos()
-      .subscribe(equipo => this.equipos = equipo);
+    this.equiposService.getTeams()
+      .subscribe(data => {
+        this.equipos = data;
+        console.log(this.equipos);
+      });
+
+
+
+      /* this.equiposService.getPlayers()
+        .subscribe(name => this.equipos = name); */
   }
+
+/*   getid(){
+    console.log(this.equipos);
+  } */
 
 }
