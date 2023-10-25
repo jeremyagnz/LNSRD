@@ -1,10 +1,56 @@
-<!-- <h1>Listado de Heroes</h1>
-<mat-divider></mat-divider>
 
-<div class="grid bm-8 pt-2">
-  <div *ngFor="let hero of heroes"
-   class="col-m12 sm:col-4 md:col-3 xl:col-2">
-   <heroes-hero-card [hero]="hero"></heroes-hero-card>
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</ng-template>
+
+
+<div  *ngIf="equipo; else divLoading" class="grid p-5 just flex justify-content-center">
+    <mat-card class="col-8 p-sm:col-2 md:col-4 xl:col-4 text-center" style="background-color: #212124;">
+        <mat-card-header class="justify-content-center text-center">
+          <mat-card-title>{{equipo.name}}</mat-card-title>
+          <mat-card-subtitle>{{equipo.name}} </mat-card-subtitle>
+        </mat-card-header>
+
+        <img [src]="equipo | heroImage" [alt]="equipo.superhero" mat-card-hero>
+
+        <mat-card-footer> <strong>Manager: </strong>{{equipo.manager}} </mat-card-footer>
+        <button
+        mat-button
+        color="warn"
+        (click)="goBack()"
+        >
+          Regresar
+</button>
+    </mat-card>
+
+
+</div>
+<div class="mat-elevation-z8 d-flex justify-content-center">
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource">
+      <!-- Columnas personalizadas basadas en displayedColumns -->
+      <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
+        <th mat-header-cell *matHeaderCellDef>{{ column }}</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- Si la columna es 'BATEADORES', crea un enlace redireccionable -->
+          <ng-container *ngIf="column === 'BATEADORES'; else notBateadores">
+            <a [routerLink]="['/teams/jugadores']">{{ element['BATEADORES'] }}</a>
+          </ng-container>
+          <!-- Si no es 'BATEADORES', muestra el valor sin enlace -->
+          <ng-template #notBateadores>
+            {{ element[column] }}
+          </ng-template>
+        </td>
+      </ng-container>
+
+      <!-- Encabezado y filas de la tabla -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
   </div>
 </div>
- -->

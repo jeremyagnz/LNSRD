@@ -13,8 +13,8 @@ const routes: Routes = [
     children:[
       {path:'list', component:ListPageComponent},
       {path:'search', component:SearchPageComponent},
-      {path:'equipos', component:EquiposComponent},
-      {path:':id', component:PlayerPageComponent},
+      {path:'jugadores', component:PlayerPageComponent},
+      {path:':id', component:EquiposComponent},
       {path:'**', redirectTo:'list'}
     ]
   }

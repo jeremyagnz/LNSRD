@@ -1,9 +1,15 @@
-<h1 class=" flex justify-content-center">Listado de Equipos</h1>
+<div class="flex justify-content-between">
+  <button mat-flat-button color="accent">Calendario</button>
+  <h1 class=" flex justify-content-center text-center">Listado de Equipos</h1>
+  <button mat-flat-button color="accent">Primary</button>
+</div>
 <mat-divider></mat-divider>
 
 <div class="grid bm-8 pt-2 justify-content-center">
   <div *ngFor="let equipo of equipos"
-   class="col-m6 sm:col-4 md:col-3 xl:col-2">
+   class="col-8 p-sm:col-2 md:col-4 xl:col-2">
    <equipos-equipo-card [equipo]="equipo"></equipos-equipo-card>
   </div>
 </div>
+
+

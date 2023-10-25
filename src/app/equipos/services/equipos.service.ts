@@ -20,7 +20,7 @@ export class EquiposService {
   }
 
   getEquiposById(id:string):Observable<Equipos | undefined>{
-    return this.http.get<Equipos>(`${this.baseUrl}/equipo/${ id }`)
+    return this.http.get<Equipos>(`http://localhost:3000/teams/get?id=${ id }`)
       .pipe(
         catchError (error => of(undefined))
       );
@@ -41,5 +41,7 @@ export class EquiposService {
   getSuggestions( query:string ):Observable<any[]>{
     return this.http.get<any[]>(`http://localhost:3000/teams/get?q=${ query }`);
   }
+
+
 
 }
