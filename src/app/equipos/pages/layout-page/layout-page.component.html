@@ -13,7 +13,7 @@
         <mat-list-item
           *ngFor="let item of sidebarItems"
           [routerLink]="item.url"
-          routerLinkActive="active-link" 
+          routerLinkActive="active-link"
           (click)="sidenav.toggle()"
         >
           <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
@@ -29,12 +29,7 @@
     </button>
 
     <span class="spacer"></span>
-    <!-- <div>
-      <img src="assets/equipos/logo.png" alt="" srcset="" width="100" height="50">
-    </div> -->
-    <span>
-       LNS RD
-    </span>
+    <img src="assets/equipos/logo.png" alt="Logo" width="100" height="80"  class="invert-image">
     <span class="spacer"></span>
 
     <button mat-button>
