@@ -29,7 +29,7 @@ import { MatTableModule } from '@angular/material/table';
     EquiposRoutingModule,
     MaterialModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
   ]
 })
 export class EquiposModule { }

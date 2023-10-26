@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EquiposService } from '../../services/equipos.service';
 import { switchMap } from 'rxjs';
@@ -64,7 +64,7 @@ export class EquiposComponent {
         switchMap(({id})  => this.equiposService.getEquiposById(id)),
       ).subscribe( team => {
         console.log('object', team);
-        if(!team) return this.router.navigate(['/teams/list']);
+        if(!team) return this.router.navigate(['/inicio/equipos']);
 
         this.equipo = team;
         return;

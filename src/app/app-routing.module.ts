@@ -4,7 +4,7 @@ import { Error404pageComponent } from './shared/pages/error404page/error404page.
 
 const routes: Routes = [
   {
-    path: 'teams',
+    path: 'inicio',
     loadChildren: ()=> import('./equipos/equipos.module').then(m => m.EquiposModule)
   },
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo:'teams',
+    redirectTo:'inicio',
     pathMatch: 'full'
   },
   {

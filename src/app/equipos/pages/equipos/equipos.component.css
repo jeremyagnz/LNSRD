@@ -28,3 +28,30 @@ a {
   text-decoration: none;
   color: #69f0ae;
 }
+
+/* Cambia el color de fondo y texto de las celdas de encabezado */
+.custom-header {
+  z-index: 1000;
+  background-color: #ef2c00; /* Cambia este valor al color que desees */
+  color: #69f0ae; /* Cambia el color del texto si es necesario */
+}
+
+
+
+@keyframes scrollBlink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.scroll-text {
+  animation: scrollBlink 1s linear infinite;
+}
+
+
