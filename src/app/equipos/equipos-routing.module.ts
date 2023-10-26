@@ -11,11 +11,11 @@ const routes: Routes = [
     path:'',
     component:LayoutPageComponent,
     children:[
-      {path:'list', component:ListPageComponent},
+      {path:'equipos', component:ListPageComponent},
       {path:'search', component:SearchPageComponent},
-      {path:'jugadores', component:PlayerPageComponent},
-      {path:':id', component:EquiposComponent},
-      {path:'**', redirectTo:'list'}
+      {path:'calendario', component:PlayerPageComponent},
+      {path:'equipo/:id', component:EquiposComponent},
+      {path:'**', redirectTo:'equipos'}
     ]
   }
 ];

@@ -15,4 +15,9 @@
   align-items: center;
 }
 
+.active-link {
+  background-color: rgba(128, 118, 118, 0.351);
+  color: white;
+}
+
 
