@@ -1,0 +1,42 @@
+/* Apply a background color to alternate cards */
+.alternate-card {
+  background-color: #212121; /* Set your desired background color here */
+}
+.alternate-card2 {
+  background-color: #424242; /* Set your desired background color here */
+}
+.img{
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+
+.card{
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: #424242;
+}
+.card2{
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: #212121;
+}
+
+
+mat-tab-group {
+  max-height: 60vh; /* Establece la altura máxima como el 60% de la altura de la ventana (viewport height) */
+  overflow-y: auto;
+}
+
+/* Agrega una media query para ajustar el diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+  mat-tab-group {
+    max-height: 80vh; /* Cambia la altura máxima en pantallas pequeñas si es necesario */
+  }
+}
+
+
+
+
+
+

@@ -6,7 +6,8 @@ import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 @Component({
   selector: 'app-player-page',
   templateUrl: './player-page.component.html',
-  styleUrls: ['./player-page.component.css']
+  styleUrls: ['./player-page.component.css'],
+  
 })
 export class PlayerPageComponent {
 
