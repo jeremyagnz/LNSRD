@@ -1,3 +1,3 @@
 export const environments = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'http://localhost:https://lns-server-8a35u.ondigitalocean.app',
 };
