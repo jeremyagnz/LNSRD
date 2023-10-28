@@ -12,7 +12,6 @@
 }
 
 .card{
-  border: 1px solid black;
   border-radius: 5%;
   background-color: #424242;
 }
@@ -27,16 +26,56 @@ mat-tab-group {
   max-height: 60vh; /* Establece la altura máxima como el 60% de la altura de la ventana (viewport height) */
   overflow-y: auto;
 }
+/* Define la animación para el parpadeo */
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 
-/* Agrega una media query para ajustar el diseño en pantallas pequeñas */
-@media (max-width: 768px) {
-  mat-tab-group {
-    max-height: 80vh; /* Cambia la altura máxima en pantallas pequeñas si es necesario */
+/* Estilos para el mensaje de "Scroll hacia abajo" */
+.scroll-hint {
+  display: block;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  animation: blink 1.5s linear infinite; /* Aplica la animación de parpadeo */
+}
+
+/* Ajusta los estilos según tus preferencias */
+mat-tab-group {
+  max-height: 75vh; /* Cambia la altura máxima en pantallas pequeñas si es necesario */
+}
+
+/* Oculta el mensaje en pantallas más grandes */
+@media (min-width: 769px) {
+  .scroll-hint {
+    display: none;
   }
 }
 
 
+/* Estilo predeterminado para el enlace */
+a {
+  text-decoration: none; /* Quita el subrayado predeterminado del enlace */
+  color: white; /* Cambia el color del texto del enlace */
+}
 
+/* Estilo para el enlace cuando se coloca el mouse encima (hover) */
+a:hover {
+  color: rgb(167, 215, 167); /* Cambia el color del texto del enlace cuando se coloca el mouse encima */
+}
 
+/* Efecto de transición suave */
+a {
+  transition: color 0.3s; /* Agrega una transición suave al color del texto durante 0.3 segundos */
+}
 
-
+/* Estilo para el contenedor div cuando se coloca el mouse encima del enlace */
+a:hover .flex {
+  border: 1px solid #95d194; /* Cambia el borde del contenedor cuando se coloca el mouse encima del enlace */
+}
