@@ -1,14 +1,20 @@
-<mat-card (click)="onClick()" class="size">
-  <mat-card-header class="justify-content-center m-2">
-    <mat-card-title>{{equipo.name | titlecase }}</mat-card-title>
-  </mat-card-header>
+<div class="container">
+  <div class="container-card">
+    <mat-card (click)="onClick()" class="size">
+      <mat-card-header class="justify-content-center m-2">
+        <mat-card-title>{{equipo.name | titlecase }}</mat-card-title>
+      </mat-card-header>
 
-  <img mat-card-image [src]=" equipo | heroImage" [alt]="equipo.name">
+      <img mat-card-image [src]=" equipo | heroImage" [alt]="equipo.name">
 
-  <button mat-button mat-stroked-button color="accent" [routerLink]="['/inicio/equipo',equipo.id]">
-    <mat-icon> more_horiz</mat-icon>
-    ver Equipo
+      <button mat-button mat-stroked-button color="accent" [routerLink]="['/inicio/equipo',equipo.id]">
+        <mat-icon> more_horiz</mat-icon>
+        ver Equipo
 
-  </button>
+      </button>
 
-</mat-card>
+    </mat-card>
+
+  </div>
+
+</div>
