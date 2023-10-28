@@ -3,3 +3,8 @@ margin: 25px;
   height: auto;
   width: 75%;
 }
+
+.container {
+  max-height: 60vh;
+  overflow-y: auto;
+}
