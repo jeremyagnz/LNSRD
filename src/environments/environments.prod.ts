@@ -1,3 +1,3 @@
 export const environments = {
-  baseUrl: ''
+  baseUrl: 'https://lns-server-8a35u.ondigitalocean.app'
 }
