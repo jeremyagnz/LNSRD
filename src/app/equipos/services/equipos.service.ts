@@ -10,6 +10,8 @@ import { Jugadores } from '../interfaces/jugadores.interface';
 })
 export class EquiposService {
 
+
+
   private baseUrl: string = environments.baseUrl;
 
   constructor(private http: HttpClient ) { }
@@ -20,7 +22,7 @@ export class EquiposService {
   }
 
   getEquiposById(id:string):Observable<Equipos | undefined>{
-    return this.http.get<Equipos>(`http://localhost:3000/teams/get?id=${ id }`)
+    return this.http.get<Equipos>(`${this.baseUrl}/teams/get?id=${ id }`)
       .pipe(
         catchError (error => of(undefined))
       );
@@ -31,15 +33,15 @@ export class EquiposService {
   }
 
   getPlayers():Observable<any[]>{
-    return this.http.get<any[]>(`http://localhost:3000/players/get`);
+    return this.http.get<any[]>(`${this.baseUrl}/players/get`);
   }
 
   getTeams():Observable<any[]>{
-    return this.http.get<any[]>(`http://localhost:3000/teams/get`);
+    return this.http.get<any[]>(`${this.baseUrl}/teams/get`);
   }
 
   getSuggestions( query:string ):Observable<any[]>{
-    return this.http.get<any[]>(`http://localhost:3000/teams/get?q=${ query }`);
+    return this.http.get<any[]>(`${this.baseUrl}/teams/get?q=${ query }`);
   }
 
 
