@@ -12,6 +12,7 @@ import { CardComponent } from './components/card/card.component';
 import { EquipoImagenPipe } from './pipes/equipo-imagen.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -30,6 +31,8 @@ import { MatTableModule } from '@angular/material/table';
     MaterialModule,
     ReactiveFormsModule,
     MatTableModule,
+    MatTabsModule
+
   ]
 })
 export class EquiposModule { }
