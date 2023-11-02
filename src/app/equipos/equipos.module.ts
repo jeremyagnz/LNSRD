@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CalendarComponent } from './pages/calendar-page/calendar.component';
+import { PosicionesComponent } from './pages/posiciones/posiciones.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CalendarComponent } from './pages/calendar-page/calendar.component';
     CalendarComponent,
     EquiposComponent,
     CardComponent,
-    EquipoImagenPipe
+    EquipoImagenPipe,
+    PosicionesComponent
   ],
   imports: [
     CommonModule,

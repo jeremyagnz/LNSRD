@@ -1,0 +1,43 @@
+<div class="text-center">
+  <h1> Posiciones LNS</h1>
+</div>
+<div class="mat-elevation-z8">
+
+  <table mat-table [dataSource]="dataSource">
+
+    <!-- Definición de columnas -->
+    <ng-container matColumnDef="image">
+      <th mat-header-cell *matHeaderCellDef> Equipos </th>
+      <td mat-cell *matCellDef="let element"> <img [src]="element.image" alt="{{element.name}}" width="50" height="50"> </td>
+    </ng-container>
+
+    <ng-container matColumnDef="juegos">
+      <th mat-header-cell *matHeaderCellDef> J </th>
+      <td mat-cell *matCellDef="let element"> {{element.juegos}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ganados">
+      <th mat-header-cell *matHeaderCellDef> G </th>
+      <td mat-cell *matCellDef="let element"> {{element.ganados}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="perdidos">
+      <th mat-header-cell *matHeaderCellDef> P </th>
+      <td mat-cell *matCellDef="let element"> {{element.perdidos}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="PCT">
+      <th mat-header-cell *matHeaderCellDef> PCT </th>
+      <td mat-cell *matCellDef="let element"> {{element.PCT}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="DIF">
+      <th mat-header-cell *matHeaderCellDef> DIF </th>
+      <td mat-cell *matCellDef="let element"> {{element.DIF}} </td>
+    </ng-container>
+
+    <!-- Filas de encabezado y datos -->
+    <tr mat-header-row class="headers" *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="getColorClass(row)"></tr>
+  </table>
+</div>
