@@ -5,11 +5,11 @@ import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 
 @Component({
   selector: 'app-player-page',
-  templateUrl: './player-page.component.html',
-  styleUrls: ['./player-page.component.css'],
-  
+  templateUrl: './calendar.component.html',
+  styleUrls: ['./calendar.component.css'],
+
 })
-export class PlayerPageComponent {
+export class CalendarComponent {
 
   public searchInput =  new FormControl('');
   public players: any[] = [];
