@@ -1,15 +1,16 @@
-<div class="flex justify-content-between">
-  <button mat-flat-button color="accent" routerLink="/inicio/calendario">Calendario</button>
-  <h1 class=" flex justify-content-center text-center">Listado de Equipos</h1>
-  <button mat-flat-button color="accent">Jugadores</button>
-</div>
-<mat-divider></mat-divider>
-
-<div class="grid bm-8 pt-2 justify-content-center">
-  <div *ngFor="let equipo of equipos"
-   class="col-8 p-sm:col-2 md:col-4 xl:col-2">
-   <equipos-equipo-card [equipo]="equipo"></equipos-equipo-card>
+<div class="container m-2">
+  <div class="flex justify-content-between align-items-center">
+    <button mat-flat-button color="accent" routerLink="/inicio/calendario" class="button p-3">Calendario</button>
+    <h1 class=" flex justify-content-center text-center">Listado de Equipos</h1>
+    <button mat-flat-button color="accent" class="button p-3">Jugadores</button>
   </div>
+  <mat-divider></mat-divider>
+
+  <div class="grid bm-8 pt-2 justify-content-center text-center">
+    <div *ngFor="let equipo of equipos"
+     class="col-8 p-sm:col-2 md:col-4 xl:col-2">
+     <equipos-equipo-card [equipo]="equipo"></equipos-equipo-card>
+    </div>
+  </div>
+
 </div>
-
-

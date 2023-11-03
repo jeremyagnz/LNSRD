@@ -1,8 +1,8 @@
 <div class="container">
   <div class="container-card">
     <mat-card (click)="onClick()" class="size">
-      <mat-card-header class="justify-content-center m-2">
-        <mat-card-title>{{equipo.name | titlecase }}</mat-card-title>
+      <mat-card-header class="justify-content-center m-2 ">
+        <mat-card-title class="header">{{equipo.name | titlecase }}</mat-card-title>
       </mat-card-header>
 
       <img mat-card-image [src]=" equipo | heroImage" [alt]="equipo.name">

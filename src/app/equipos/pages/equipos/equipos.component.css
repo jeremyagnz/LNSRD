@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+.container,mat-card { font-family: 'Mitr', sans-serif; }
 /* Contenedor de la tabla */
 .table-container {
   overflow-x: auto; /* Permitir desplazamiento horizontal en dispositivos estrechos */
