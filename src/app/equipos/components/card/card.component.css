@@ -8,3 +8,7 @@ margin: 25px;
   max-height: 60vh;
   overflow-y: auto;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+.container, .header,button{ font-family: 'Mitr', sans-serif; }

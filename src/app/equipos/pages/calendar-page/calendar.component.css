@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+.container,  h1 { font-family: 'Mitr', sans-serif; }
 /* Apply a background color to alternate cards */
 .alternate-card {
   background-color: #212121; /* Set your desired background color here */
@@ -79,3 +81,4 @@ a {
 a:hover .flex {
   border: 1px solid #95d194; /* Cambia el borde del contenedor cuando se coloca el mouse encima del enlace */
 }
+
